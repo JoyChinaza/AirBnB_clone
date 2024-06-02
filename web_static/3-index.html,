@@ -1,0 +1,95 @@
+<!-- 
+HTML page that displays a header and footer using CSS files (same as 2-index.html).
+
+Layout:
+
+Common:
+- No margin
+- No padding
+- Font color: #484848
+- Font size: 14px
+- Font family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif
+- Icon in the browser tab
+-->
+
+index.html
+styles/
+  3-common.css
+  3-header.css
+  3-footer.css
+images/
+  logo.png
+favicon.ico
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best School</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/3-common.css">
+    <link rel="stylesheet" href="styles/3-header.css">
+    <link rel="stylesheet" href="styles/3-footer.css">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+    </header>
+
+    <main>
+        <p>This is the main content of the page.</p>
+    </main>
+
+    <footer>
+        <p>Best School</p>
+    </footer>
+</body>
+</html>
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #484848;
+    font-size: 14px;
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+header .logo {
+    background: url('../images/logo.png') no-repeat;
+    background-size: contain;
+    height: 50px; 
+    width: 150px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    height: 60px;
+    width: 100%;
+    border-top: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
