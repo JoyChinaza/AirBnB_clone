@@ -1,0 +1,99 @@
+<!--
+HTML page displaying a header, footer, a filters box with dropdown, and search results.
+
+Requirements:
+- Use: header, footer, section, article, button, h1, h2, h3, h4, ul, li tags
+- No inline style
+- Do not use the img tag
+- Do not use the style tag in the head tag
+- All images must be stored in the images folder
+- Must have 5 CSS files:
+  - styles/4-common.css: for global style (body and .container styles)
+  - styles/3-header.css: for header style
+  - styles/3-footer.css: for footer style
+  - styles/6-filters.css: for filters style
+  - styles/100-places.css: for places style
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best School</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/4-common.css">
+    <link rel="stylesheet" href="styles/3-header.css">
+    <link rel="stylesheet" href="styles/3-footer.css">
+    <link rel="stylesheet" href="styles/6-filters.css">
+    <link rel="stylesheet" href="styles/100-places.css">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+    </header>
+
+    <div class="container">
+        <section class="filters">
+            <select>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <button>Search</button>
+        </section>
+
+        <section class="places">
+            <article>
+                <h2>Place 1</h2>
+                <div class="price_by_night">$100</div>
+                <div class="information">
+                    <div class="max_guest">
+                        <span>Max Guests:</span>
+                        <span>5</span>
+                    </div>
+                    <div class="number_rooms">
+                        <span>Bedrooms:</span>
+                        <span>3</span>
+                    </div>
+                    <div class="number_bathrooms">
+                        <span>Bathrooms:</span>
+                        <span>2</span>
+                    </div>
+                </div>
+                <div class="user">
+                    <span><b>Owner:</b> Fake Owner Name</span>
+                </div>
+                <div class="description">
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar lacus at ligula malesuada feugiat.</p>
+                </div>
+                <div class="amenities">
+                    <h2>Amenities</h2>
+                    <ul>
+                        <li>Pet friendly</li>
+                        <li>TV</li>
+                        <li>Wifi</li>
+                        <!-- Add more amenities as needed -->
+                    </ul>
+                </div>
+                <div class="reviews">
+                    <h2>Reviews</h2>
+                    <ul>
+                        <li>
+                            <h3>From Bob Dylan the 27th January 2017</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar lacus at ligula malesuada feugiat.</p>
+                        </li>
+                        <!-- Add more reviews as needed -->
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <p>Best School</p>
+    </footer>
+</body>
+</html>
+
