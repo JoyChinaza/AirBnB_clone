@@ -1,0 +1,67 @@
+<!--
+Improve the Places section by using Flexible boxes for all Place articles
+
+Flexbox Froggy
+-->
+
+<section class="places">
+    <article class="place">
+        <!-- Place content goes here -->
+    </article>
+    <article class="place">
+        <!-- Place content goes here -->
+    </article>
+    <!-- Add more articles for each place -->
+</section>
+
+
+.place {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.place h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.place .price_by_night {
+    color: #FF5A5F;
+    margin-top: auto; /* Pushes the price to the bottom */
+}
+
+.place .information {
+    margin-top: 20px;
+    border-top: 1px solid #DDD;
+    padding-top: 20px;
+}
+
+.place .information > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.place .information > div > span:first-child {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.place .amenities,
+.place .reviews {
+    margin-top: 20px;
+    border-top: 1px solid #DDD;
+    padding-top: 20px;
+}
+
+.place .amenities h2,
+.place .reviews h2 {
+    font-size: 16px;
+    border-bottom: 1px so
+
+
+
