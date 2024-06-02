@@ -1,0 +1,76 @@
+<!-- 
+HTML page that displays a header and a footer using external CSS files:
+- Use the <header> and <footer> tags.
+- Avoid inline styling.
+- Include the following 3 CSS files:
+  - styles/2-common.css: Contains global styles (e.g., body styles).
+  - styles/2-header.css: Contains styles specific to the header.
+  - styles/2-footer.css: Contains styles specific to the footer.
+- Ensure the layout matches 1-index.html exactly.
+-->
+
+index.html
+styles/
+  2-common.css
+  2-header.css
+  2-footer.css
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="styles/2-common.css">
+    <link rel="stylesheet" href="styles/2-header.css">
+    <link rel="stylesheet" href="styles/2-footer.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+
+    <main>
+        <p>Content of the page.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Chinaza. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
